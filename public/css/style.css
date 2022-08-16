@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,700;1,200&display=swap');
+*,
+*::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hidden {
+    display: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
+    background-image: url(/images/bg-img2.jpg);
+    background-size: contain;
+    background-repeat: repeat;
+}
+
+.app-con {
+    max-width: 48rem;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.25)), url(/images/bg-img2.jpg);
+    background-size: cover;
+    background-position: fixed;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 3.2rem;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 100%;
+}
+
+.inputSearch {
+    width: 100%;
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #313131;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #60a3eb;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 0 16px 0 16px;
+    -webkit-border-radius: 0 16px 0 16px;
+    -moz-border-radius: 0 16px 0 16px;
+    -ms-border-radius: 0 16px 0 16px;
+    -o-border-radius: 0 16px 0 16px;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+.inputSearch:focus {
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 16px 0 16px 0;
+    -webkit-border-radius: 16px 0 16px 0;
+    -moz-border-radius: 16px 0 16px 0;
+    -ms-border-radius: 16px 0 16px 0;
+    -o-border-radius: 16px 0 16px 0;
+}
+
+main {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.forecast {
+    display: flex;
+    align-items: center;
+}
+
+.city, .country, .comma{
+    color: #efefef;
+    font-size: 3rem;
+    letter-spacing: 1px;
+    line-height: 1;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.flagImg {
+    height: 2.2rem;
+    width: 2.2rem;
+    margin-left: 2rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.date {
+    font-size: 1.6rem;
+    font-weight: 200;
+    letter-spacing: 0.5px;
+    font-style: italic;
+    color: #efefef;
+}
+
+.temperature {
+    font-size: 12rem;
+    font-weight: 700;
+}
+
+.degreeSym {
+    font-weight: 200;
+    font-size: 3.2rem;
+}
+
+.celcius {
+    font-weight: 400;
+    font-size: 5rem;
+}
+
+.temperature, .degreeSym, .celcius {
+    color: #efefef;
+    text-shadow: 2px 5px rgba(96, 163, 235, 0.579)
+}
+
+.description {
+    color: #efefef;
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.lower {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.extras {
+    background-color: rgba(255, 255, 255, 0.65);
+    display: flex;
+    color: #313131;
+    font-weight: 400;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    margin-top: auto;
+    border-radius: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    -ms-border-radius: 9px;
+    -o-border-radius: 9px;
+}
+
+.extras div {
+    text-align: center;
+}
+
+.extra-title {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}

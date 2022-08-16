@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>weathermax</title>
+</head>
+<body>
+    <div class="app-con">
+        <header>
+            <form>
+                <input type="text" class="inputSearch" placeholder="Location...">
+            </form>
+        </header>
+        <main class="hidden">
+            <div class="upper">
+                <section class="location">
+                    <div>
+                        <span  class="city">Lagos</span> <span class="comma">,</span> 
+                        <span class="country">NG</span> <span><img src="/images/flag.png" alt="flag" class="flagImg"></span>
+                    </div>
+                    <div class="date">Fri 23 August 2020</div>
+                </section>
+                <section>
+                    <div class="forecast"><span class="temperature">27</span><span><sup class="degreeSym">o</sup></span><span class="celcius">C</span></div>
+                    <div class="description">Partly sunny</div>
+                </section>
+            </div>
+            <div class="lower">
+                <section class="extras">
+                    <div class="humidity">
+                        <div><span class="humidity--no">62</span><span>%</span></div>
+                        <div class="extra-title">Humidity</div>
+                    </div>
+        
+                    <div class="weather">
+                        <div class="weather--name">clouds</div>
+                        <div class="extra-title">Weather</div>
+                    </div>
+        
+                    <div class="visibility">
+                        <div><span class="visibility--no">4</span><span>km</span></div>
+                        <div class="extra-title">Visibility</div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+    <script src="/js/index.js"></script>
+</body>
+</html>
