@@ -6,6 +6,7 @@ const getCountryFlag = require('./countryflag');
 
 
 const app = express();
+const port = process.env.PORT || 1999;
 app.set('view engine', 'hbs');
 
 const pubDir = path.join(__dirname, '../public');
@@ -66,4 +67,4 @@ app.get('*', (req, res) => {
 
 
 
-app.listen(1999, () => console.log('app running on port 1999'));
+app.listen(port, () => console.log(`Application is running on ${port}`));

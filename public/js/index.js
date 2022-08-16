@@ -17,7 +17,7 @@ formEl.addEventListener('submit', (e) => {
     e.preventDefault();
     const address = inputEl.value;
 
-    fetch(`http://localhost:1999/weather?address=${address}`).then(response => {
+    fetch(`/weather?address=${address}`).then(response => {
         response.json().then(data => {
             if(data.error) {
                 console.log(data.error.message);
